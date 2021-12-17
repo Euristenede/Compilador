@@ -1,0 +1,3 @@
+flex calculadora.l
+bison -d calculadora.y
+gcc calculadora.tab.c lex.yy.c calculadora.c -lm -o calculadora.exe

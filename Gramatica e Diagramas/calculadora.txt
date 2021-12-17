@@ -1,0 +1,34 @@
+calclist::=
+	| calclist stmt EOL 
+	| calclist LET NAME 
+	| calclist error EOL
+	
+stmt::= IF exp THEN list
+	| IF exp THEN list ELSE list
+	| WHILE exp DO list
+	| FOR '(' exp ';' exp ';' exp ')' list
+	| exp
+	
+list::=
+	| stmt ';' list
+	
+exp::= exp CMP exp
+   | exp '+' exp
+   | exp '-' exp
+   | exp '*' exp
+   | exp '/' exp
+   | '|' exp
+   | '(' exp ')'
+   | '-' exp UMINUS
+   | NUMBER
+   | NAME
+   | NAME '=' exp
+   | FUNC '(' explist ')'
+   | NAME '(' explist ')'
+   
+explist::= exp
+       | exp ',' explist
+		
+symlist::= NAME
+       | NAME ',' symlist
+	   

@@ -1,0 +1,303 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      
+      <meta name="generator" content="Railroad Diagram Generator 1.63">
+      
+      <style type="text/css">
+    ::-moz-selection
+    {
+      color: #FFFCF0;
+      background: #0F0C00;
+    }
+    ::selection
+    {
+      color: #FFFCF0;
+      background: #0F0C00;
+    }
+    .ebnf a, .grammar a
+    {
+      text-decoration: none;
+    }
+    .ebnf a:hover, .grammar a:hover
+    {
+      color: #050400;
+      text-decoration: underline;
+    }
+    .signature
+    {
+      color: #806600;
+      font-size: 11px;
+      text-align: right;
+    }
+    body
+    {
+      font: normal 12px Verdana, sans-serif;
+      color: #0F0C00;
+      background: #FFFCF0;
+    }
+    a:link, a:visited
+    {
+      color: #0F0C00;
+    }
+    a:link.signature, a:visited.signature
+    {
+      color: #806600;
+    }
+    a.button, #tabs li a
+    {
+      padding: 0.25em 0.5em;
+      border: 1px solid #806600;
+      background: #F1E8C6;
+      color: #806600;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.button:hover, #tabs li a:hover
+    {
+      color: #050400;
+      background: #FFF6D1;
+      border-color: #050400;
+    }
+    #tabs
+    {
+      padding: 3px 10px;
+      margin-left: 0;
+      margin-top: 58px;
+      border-bottom: 1px solid #0F0C00;
+    }
+    #tabs li
+    {
+      list-style: none;
+      margin-left: 5px;
+      display: inline;
+    }
+    #tabs li a
+    {
+      border-bottom: 1px solid #0F0C00;
+    }
+    #tabs li a.active
+    {
+      color: #0F0C00;
+      background: #FFFCF0;
+      border-color: #0F0C00;
+      border-bottom: 1px solid #FFFCF0;
+      outline: none;
+    }
+    #divs div
+    {
+      display: none;
+      overflow:auto;
+    }
+    #divs div.active
+    {
+      display: block;
+    }
+    #text
+    {
+      border-color: #806600;
+      background: #FFFEFA;
+      color: #050400;
+    }
+    .small
+    {
+      vertical-align: top;
+      text-align: right;
+      font-size: 9px;
+      font-weight: normal;
+      line-height: 120%;
+    }
+    td.small
+    {
+      padding-top: 0px;
+    }
+    .hidden
+    {
+      visibility: hidden;
+    }
+    td:hover .hidden
+    {
+      visibility: visible;
+    }
+    div.download
+    {
+      display: none;
+      background: #FFFCF0;
+      position: absolute;
+      right: 34px;
+      top: 94px;
+      padding: 10px;
+      border: 1px dotted #0F0C00;
+    }
+    #divs div.ebnf, .ebnf code
+    {
+      display: block;
+      padding: 10px;
+      background: #FFF6D1;
+      width: 992px;
+    }
+    #divs div.grammar
+    {
+      display: block;
+      padding-left: 16px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      background: #FFF6D1;
+    }
+    pre
+    {
+      margin: 0px;
+    }
+    .ebnf div
+    {
+      padding-left: 13ch;
+      text-indent: -13ch;
+    }
+    .ebnf code, .grammar code, textarea, pre
+    {
+      font:12px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+    }
+    tr.option-line td:first-child
+    {
+      text-align: right
+    }
+    tr.option-text td
+    {
+      padding-bottom: 10px
+    }
+    table.palette
+    {
+      border-top: 1px solid #050400;
+      border-right: 1px solid #050400;
+      margin-bottom: 4px
+    }
+    td.palette
+    {
+      border-bottom: 1px solid #050400;
+      border-left: 1px solid #050400;
+    }
+    a.palette
+    {
+      padding: 2px 3px 2px 10px;
+      text-decoration: none;
+    }
+    .palette
+    {
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      -ms-user-select: none;
+    }
+  </style>
+   </head>
+   
+   <body class="vsc-initialized">
+      
+      <p style="font-size: 14px; font-weight:bold"><a name="calclist">calclist:</a></p><img border="0" src="diagram/calclist.png" height="157" width="333" usemap="#calclist.map"><map name="calclist.map"><area shape="rect" coords="109,17,157,49" href="#stmt" title="stmt"><area shape="rect" coords="109,61,159,93" href="#error" title="error"><area shape="rect" coords="199,17,243,49" href="#EOL" title="EOL"><area shape="rect" coords="89,105,131,137" href="#LET" title="LET"><area shape="rect" coords="151,105,205,137" href="#NAME" title="NAME"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#calclist" title="calclist">calclist</a>&nbsp;::= ( ( <a href="#stmt" title="stmt">stmt</a> | <a href="#error" title="error">error</a> ) <a href="#EOL" title="EOL">EOL</a> | <a href="#LET" title="LET">LET</a> <a href="#NAME" title="NAME">NAME</a> )*</div></code></div>
+         </p>
+      
+      <p>no references</p><br><p style="font-size: 14px; font-weight:bold"><a name="stmt">stmt:</a></p><img border="0" src="diagram/stmt.png" height="201" width="607" usemap="#stmt.map"><map name="stmt.map"><area shape="rect" coords="69,1,101,33" href="#IF" title="IF"><area shape="rect" coords="121,1,163,33" href="#exp" title="exp"><area shape="rect" coords="183,1,235,33" href="#THEN" title="THEN"><area shape="rect" coords="275,33,313,65" href="#list" title="list"><area shape="rect" coords="333,33,383,65" href="#ELSE" title="ELSE"><area shape="rect" coords="69,77,131,109" href="#WHILE" title="WHILE"><area shape="rect" coords="151,77,193,109" href="#exp" title="exp"><area shape="rect" coords="213,77,251,109" href="#DO" title="DO"><area shape="rect" coords="69,121,113,153" href="#FOR" title="FOR"><area shape="rect" coords="179,121,221,153" href="#exp" title="exp"><area shape="rect" coords="285,121,327,153" href="#exp" title="exp"><area shape="rect" coords="391,121,433,153" href="#exp" title="exp"><area shape="rect" coords="519,1,557,33" href="#list" title="list"><area shape="rect" coords="49,165,91,197" href="#exp" title="exp"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#stmt" title="stmt">stmt</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= ( <a href="#IF" title="IF">IF</a> <a href="#exp" title="exp">exp</a> <a href="#THEN" title="THEN">THEN</a> ( <a href="#list" title="list">list</a> <a href="#ELSE" title="ELSE">ELSE</a> )? | <a href="#WHILE" title="WHILE">WHILE</a> <a href="#exp" title="exp">exp</a> <a href="#DO" title="DO">DO</a> | <a href="#FOR" title="FOR">FOR</a> '(' <a href="#exp" title="exp">exp</a> ';' <a href="#exp" title="exp">exp</a> ';' <a href="#exp" title="exp">exp</a> ')' ) <a href="#list" title="list">list</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#exp" title="exp">exp</a></div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#calclist" title="calclist">calclist</a></li>
+            
+            <li><a href="#list" title="list">list</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="list">list:</a></p><img border="0" src="diagram/list.png" height="69" width="231" usemap="#list.map"><map name="list.map"><area shape="rect" coords="69,17,117,49" href="#stmt" title="stmt"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#list" title="list">list</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= ( <a href="#stmt" title="stmt">stmt</a> ';' )*</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#stmt" title="stmt">stmt</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="exp">exp:</a></p><img border="0" src="diagram/exp.png" height="553" width="367" usemap="#exp.map"><map name="exp.map"><area shape="rect" coords="69,1,111,33" href="#exp" title="exp"><area shape="rect" coords="151,1,197,33" href="#CMP" title="CMP"><area shape="rect" coords="257,1,299,33" href="#exp" title="exp"><area shape="rect" coords="115,265,157,297" href="#exp" title="exp"><area shape="rect" coords="69,309,123,341" href="#FUNC" title="FUNC"><area shape="rect" coords="189,309,251,341" href="#explist" title="explist"><area shape="rect" coords="95,353,137,385" href="#exp" title="exp"><area shape="rect" coords="157,353,227,385" href="#UMINUS" title="UMINUS"><area shape="rect" coords="49,397,121,429" href="#NUMBER" title="NUMBER"><area shape="rect" coords="49,441,103,473" href="#NAME" title="NAME"><area shape="rect" coords="193,473,235,505" href="#exp" title="exp"><area shape="rect" coords="189,517,251,549" href="#explist" title="explist"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#exp" title="exp">exp</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::= ( <a href="#exp" title="exp">exp</a> ( <a href="#CMP" title="CMP">CMP</a> | '+' | '-' | '*' | '/' ) | '|' ) <a href="#exp" title="exp">exp</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| ( '(' <a href="#exp" title="exp">exp</a> | <a href="#FUNC" title="FUNC">FUNC</a> '(' <a href="#explist" title="explist">explist</a> ) ')'</div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| '-' <a href="#exp" title="exp">exp</a> <a href="#UMINUS" title="UMINUS">UMINUS</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#NUMBER" title="NUMBER">NUMBER</a></div>
+               
+               <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#NAME" title="NAME">NAME</a> ( '=' <a href="#exp" title="exp">exp</a> | '(' <a href="#explist" title="explist">explist</a> ')' )?</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#exp" title="exp">exp</a></li>
+            
+            <li><a href="#explist" title="explist">explist</a></li>
+            
+            <li><a href="#stmt" title="stmt">stmt</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="explist">explist:</a></p><img border="0" src="diagram/explist.png" height="81" width="141" usemap="#explist.map"><map name="explist.map"><area shape="rect" coords="49,45,91,77" href="#exp" title="exp"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#explist" title="explist">explist</a>&nbsp;&nbsp;::= <a href="#exp" title="exp">exp</a> ( ',' <a href="#exp" title="exp">exp</a> )*</div></code></div>
+         </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#exp" title="exp">exp</a></li>
+            </ul>
+         </p><br><p style="font-size: 14px; font-weight:bold"><a name="symlist">symlist:</a></p><img border="0" src="diagram/symlist.png" height="81" width="153" usemap="#symlist.map"><map name="symlist.map"><area shape="rect" coords="49,45,103,77" href="#NAME" title="NAME"></map><p>
+         
+         <div class="ebnf"><code>
+               
+               <div><a href="#symlist" title="symlist">symlist</a>&nbsp;&nbsp;::= <a href="#NAME" title="NAME">NAME</a> ( ',' <a href="#NAME" title="NAME">NAME</a> )*</div></code></div>
+         </p>
+      
+      <p>no references</p><br><hr>
+      
+      <p>
+         
+         <table border="0" class="signature">
+            
+            <tr>
+               
+               <td style="width: 100%">&nbsp;</td>
+               
+               <td valign="top">
+                  
+                  <nobr class="signature">... generated by <a name="Railroad-Diagram-Generator" class="signature" title="https://bottlecaps.de/rr/ui" href="https://bottlecaps.de/rr/ui" target="_blank">RR - Railroad Diagram Generator</a></nobr>
+                  </td>
+               
+               <td><a name="Railroad-Diagram-Generator" title="https://bottlecaps.de/rr/ui" href="https://bottlecaps.de/rr/ui" target="_blank"><img border="0" src="diagram/Railroad-Diagram-Generator.png" height="16" width="16"></a></td>
+               </tr>
+            </table>
+         </p>
+      </body>
+   </html>
